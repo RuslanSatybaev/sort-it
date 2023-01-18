@@ -1,17 +1,9 @@
 package ru.cft;
 
-import java.util.Arrays;
-
 import static ru.cft.Constants.asc;
 
 public class MergeSort {
     public static boolean marker;
-
-    public static void main(String[] args) {
-        String[] values = {"Foo", "Bar", "Alice", "Bob", "Celine", "David"};
-        mergeSort(values, 0, values.length - 1);
-        System.out.println("Result " + Arrays.toString(values));
-    }
 
     public static void mergeSort(String[] a, int from, int to) {
         if (from == to) {
